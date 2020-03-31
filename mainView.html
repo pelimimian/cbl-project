@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="mainView.css">
@@ -9,12 +10,16 @@
         <script src="mainView.js"></script>
         <h1>Circuit Breaker Layout</h1>
         <h2>(CBL)</h2>
-        
-        <select id="BreakerSelection">
-            <option id="17A" value="17A">17A</option>
-            <option value="Sample">Sample</option>
-        </select>
-        
-        <button onclick="assignPicture()">View</button>        
+        <table class = "formatTable">
+            <tr>
+                <th>Breaker Name</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>17 A</td>
+                <td id ="17A" class = "rightColumn" onclick="assignPicture()" >2nd Floor: Kitchen, Living Room</td>
+            </tr>
+        </table>
+        <br/>       
     </body>
 </html>

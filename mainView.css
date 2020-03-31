@@ -6,3 +6,32 @@ h2{
     text-align: center;
 }
 
+table.formatTable{
+    table-layout:auto; /*Change the sized of the table due to the screen*/
+    border-collapse: collapse; /*Remove the gaps between the borders of each row and column*/
+    margin-left: auto; /*Moves from the table from the left toward the middle automatically*/
+    margin-right: auto; /*Moves from the table from the right toward the middle automatically*/
+}
+th{
+    text-align: center;
+    background-color:rgb(202, 202, 233);
+    border: 1px solid black;
+    width: 30%;
+}
+
+tr td{
+    text-align: center; 
+    border: 1px solid black;
+    width: 30%;
+}
+
+td.rightColumn:hover{
+    background-color: rgb(115, 157, 236); /*When mouse hovers on the right column row, the section gets turns sky blue*/
+    cursor: pointer; /*When mouse hovers on the right column row, the arrow changes to pointer cursor*/
+}
+
+img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
