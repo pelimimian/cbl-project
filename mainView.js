@@ -3,19 +3,14 @@
 //Secret ae4f050c5fdf3b28
 
 function assignPicture(){
-    var breakerValue = document.getElementById("17A").id;
-   // var pictureDisplayed = false;
-   
-   // if(pictureDisplayed == false){
-        displayPicture(breakerValue);
-       // pictureDisplayed = true;
-   // }
-
+    displayPicture(document.getElementsByTagName("td"));
 }
 
-function displayPicture(breakerValue) {
-    var compareResult = breakerValue.localeCompare("17A");
-        if (compareResult == 0 ){
+function displayPicture(rowElementsByTag) {
+    //Searching throuh the list of HTML Collection elements that have td tags for find id's strings.
+    for(var i = 0; i , rowElementsByTag.length; i++){
+        var breakerValue = rowElementsByTag[i].id;
+        if (breakerValue.localeCompare("17A") == 0 ){
             //List of strings urls
             var urlsOfPics = ["https://live.staticflickr.com/65535/49667651786_eaf87c6e0b_b.jpg","https://live.staticflickr.com/65535/49667651751_60cf38e2ae.jpg", 
             "https://live.staticflickr.com/65535/49667651776_44c46ac95e_b.jpg", "https://live.staticflickr.com/65535/49667935067_7dbc48bd46_b.jpg",
@@ -24,7 +19,8 @@ function displayPicture(breakerValue) {
             for(var i = 0; i < urlsOfPics.length; i++){
                 show_image(urlsOfPics[i], 400,400, "Breaker Value_" + i);
             }
-    }
+        }
+     }
 }
 
 
